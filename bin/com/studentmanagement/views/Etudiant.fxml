@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studentmanagement.controllers.EtudiantController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="35.0" prefWidth="1100.0" styleClass="semi-top-form" stylesheets="@../../../css/style_2.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="1100.0" styleClass="top-form" stylesheets="@../../../css/style_2.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView layoutX="15.0" layoutY="7.0">
+                                 <image>
+                                    <Image url="@../../../img/kdf22.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="44.0" layoutY="11.0" text="EPSILON 1.0">
+                                 <font>
+                                    <Font name="Bodoni MT Black" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="713.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etudiant" wrappingWidth="82.33544921875">
+                                 <font>
+                                    <Font name="Britannic Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-8.0" prefHeight="565.0" prefWidth="215.0" styleClass="nav-form" stylesheets="@../../../css/style_2.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="103.0" fitWidth="106.0" layoutX="55.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../../../img/Login%20Manager.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="59.0" layoutY="107.0" prefHeight="21.0" prefWidth="121.0" text="Welcome to " textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="58.0" layoutY="128.0" prefHeight="20.0" prefWidth="110.0" text="EPSILON 1.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="121.0" layoutX="112.0" layoutY="158.0" startX="-100.0" stroke="WHITE" />
+                              <Button fx:id="accueilBtn" layoutX="-8.0" layoutY="175.0" mnemonicParsing="false" onAction="#loadAccueil" prefHeight="31.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="Accueil">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="50.0" layoutY="180.0">
+                                 <image>
+                                    <Image url="@../../../img/home_house_3526.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="etudiantBtn" layoutX="11.0" layoutY="230.0" mnemonicParsing="false" onAction="#loadEtudiant" prefHeight="21.0" prefWidth="222.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="Add etudiant">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="49.0" layoutY="233.0">
+                                 <image>
+                                    <Image url="@../../../img/64096.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="matiereBtn" layoutX="11.0" layoutY="283.0" mnemonicParsing="false" onAction="#loadMatiere" prefHeight="26.0" prefWidth="222.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="Add matiere">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="51.0" layoutY="284.0">
+                                 <image>
+                                    <Image url="@../../../img/29302.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="classeBtn" layoutX="7.0" layoutY="333.0" mnemonicParsing="false" onAction="#loadClasse" prefHeight="31.0" prefWidth="226.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="Add classe">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="evaluationBtn" layoutX="10.0" layoutY="387.0" mnemonicParsing="false" onAction="#loadComposer" prefHeight="35.0" prefWidth="225.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="Add evaluation">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="45.0" layoutY="335.0">
+                                 <image>
+                                    <Image url="@../../../img/Science-Classroom-icon.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="27.0" layoutX="42.0" layoutY="394.0">
+                                 <image>
+                                    <Image url="@../../../img/73926.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="resultatBtn" layoutX="-29.0" layoutY="445.0" mnemonicParsing="false" onAction="#loadResultat" prefHeight="35.0" prefWidth="265.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="resultat">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="statBtn" layoutX="-1.0" layoutY="493.0" mnemonicParsing="false" onAction="#loadStatistique" prefHeight="35.0" prefWidth="236.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="statistiques">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="42.0" layoutY="446.0">
+                                 <image>
+                                    <Image url="@../../../img/Resul.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="47.0" layoutY="498.0">
+                                 <image>
+                                    <Image url="@../../../img/stat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="95.0" layoutY="101.0" prefHeight="565.0" prefWidth="873.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="121.0" layoutY="83.0" prefHeight="565.0" prefWidth="872.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="8.0" layoutY="7.0" prefHeight="552.0" prefWidth="853.0" styleClass="white-bg2" stylesheets="@../../../css/style_2.css">
+                                       <children>
+                                          <Label layoutX="82.0" layoutY="321.0" text="Id :" textFill="#fffbfb">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="28.0" layoutY="363.0" text="Matricule :" textFill="#fffefe">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="matriculeTf" disable="true" editable="false" layoutX="109.0" layoutY="360.0" prefHeight="25.0" prefWidth="181.0" styleClass="textfield" stylesheets="@../../../css/style_2.css" />
+                                          <Label layoutX="60.0" layoutY="409.0" text="Nom :" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="nomTf" layoutX="109.0" layoutY="406.0" onKeyPressed="#matriculeAuto" prefHeight="25.0" prefWidth="181.0" styleClass="textfield" stylesheets="@../../../css/style_2.css" />
+                                          <TextField fx:id="idTf" disable="true" editable="false" layoutX="109.0" layoutY="318.0" prefHeight="25.0" prefWidth="181.0" styleClass="textfield" stylesheets="@../../../css/style_2.css" />
+                                          <ComboBox fx:id="sexeCb" layoutX="109.0" layoutY="458.0" onKeyPressed="#matriculeAuto" prefHeight="25.0" prefWidth="182.0" />
+                                          <Label layoutX="60.0" layoutY="461.0" text="Sexe :" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <AnchorPane layoutX="639.0" layoutY="309.0" prefHeight="200.0" prefWidth="200.0" styleClass="white-bg" stylesheets="@../../../css/style_2.css">
+                                             <children>
+                                                <ImageView fx:id="imageIv" fitHeight="216.0" fitWidth="202.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+                                                <Button fx:id="insererBtn" layoutY="175.0" mnemonicParsing="false" onAction="#AjouterImage" prefHeight="44.0" prefWidth="204.0" styleClass="insert-btn" stylesheets="@../../../css/style_2.css" text="Insérer" />
+                                             </children>
+                                          </AnchorPane>
+                                          <Button fx:id="supprimerBtn" layoutX="352.0" layoutY="438.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="91.0" styleClass="delete-btn" stylesheets="@../../../css/style_2.css" text="Supprimer" />
+                                          <Button fx:id="modifierBtn" layoutX="352.0" layoutY="373.0" mnemonicParsing="false" onAction="#update" prefHeight="40.0" prefWidth="91.0" styleClass="update-btn" stylesheets="@../../../css/style_2.css" text="Modifier" />
+                                          <Button fx:id="enregistrerBtn" layoutX="352.0" layoutY="311.0" mnemonicParsing="false" onAction="#save" prefHeight="40.0" prefWidth="91.0" styleClass="add-btn" stylesheets="@../../../css/style_2.css" text="Enregistrer" />
+                                          <Button fx:id="clearBtn" layoutX="352.0" layoutY="498.0" mnemonicParsing="false" onAction="#clear" prefHeight="40.0" prefWidth="91.0" styleClass="clear-btn" stylesheets="@../../../css/style_2.css" text="Clear" />
+                                          <TextField fx:id="mailTf" layoutX="109.0" layoutY="506.0" prefHeight="25.0" prefWidth="181.0" styleClass="textfield" stylesheets="@../../../css/style_2.css" />
+                                          <Label layoutX="60.0" layoutY="511.0" text="Mail :" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="18.0" layoutY="17.0" prefHeight="288.0" prefWidth="837.0" styleClass="white-bg" stylesheets="@../../../css/style_2.css">
+                                       <children>
+                                          <TextField id="rechercheTf" fx:id="rechecheTf" layoutX="14.0" layoutY="14.0" onAction="#search" prefHeight="25.0" prefWidth="292.0" promptText="Recherche" styleClass="search" stylesheets="@../../../css/style_2.css" />
+                                          <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="22.0" layoutY="17.0">
+                                             <image>
+                                                <Image url="@../../../img/RRR.png" />
+                                             </image>
+                                          </ImageView>
+                                          <TableView fx:id="etudiantTv" layoutX="7.0" layoutY="56.0" onMouseClicked="#tableClicked" prefHeight="223.0" prefWidth="825.0">
+                                            <columns>
+                                              <TableColumn fx:id="idCol" prefWidth="123.0" text="Id" />
+                                              <TableColumn fx:id="matriculeCol" prefWidth="142.0" text="Matricule" />
+                                                <TableColumn fx:id="nomCol" prefWidth="231.0" text="Nom" />
+                                                <TableColumn fx:id="sexeCol" prefWidth="73.0" text="Sexe" />
+                                                <TableColumn fx:id="mailCol" prefWidth="244.0" text="Mail" />
+                                                <TableColumn fx:id="photoCol" minWidth="0.0" prefWidth="0.0" text="photo" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

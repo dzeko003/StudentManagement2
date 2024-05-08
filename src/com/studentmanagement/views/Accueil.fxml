@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studentmanagement.controllers.AccueilController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="35.0" prefWidth="1100.0" styleClass="semi-top-form" stylesheets="@../../../css/style_2.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="1100.0" styleClass="top-form" stylesheets="@../../../css/style_2.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView layoutX="15.0" layoutY="7.0">
+                                 <image>
+                                    <Image url="@../../../img/kdf22.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="44.0" layoutY="11.0" text="EPSILON 1.0">
+                                 <font>
+                                    <Font name="Bodoni MT Black" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-8.0" prefHeight="565.0" prefWidth="215.0" styleClass="nav-form" stylesheets="@../../../css/style_2.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="103.0" fitWidth="106.0" layoutX="55.0" layoutY="14.0">
+                                 <image>
+                                    <Image url="@../../../img/Login%20Manager.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="59.0" layoutY="107.0" prefHeight="21.0" prefWidth="121.0" text="Welcome to " textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="58.0" layoutY="128.0" prefHeight="20.0" prefWidth="110.0" text="EPSILON 1.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="121.0" layoutX="112.0" layoutY="158.0" startX="-100.0" stroke="WHITE" />
+                              <Button fx:id="accueilBtn" layoutX="-8.0" layoutY="175.0" mnemonicParsing="false" onAction="#loadAccueil" prefHeight="31.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="Accueil">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="50.0" layoutY="180.0">
+                                 <image>
+                                    <Image url="@../../../img/home_house_3526.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="etudiantBtn" layoutX="11.0" layoutY="230.0" mnemonicParsing="false" onAction="#loadEtudiant" prefHeight="21.0" prefWidth="222.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="Add etudiant">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="49.0" layoutY="233.0">
+                                 <image>
+                                    <Image url="@../../../img/64096.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="matiereBtn" layoutX="11.0" layoutY="283.0" mnemonicParsing="false" onAction="#loadMatiere" prefHeight="26.0" prefWidth="222.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="Add matiere">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="51.0" layoutY="284.0">
+                                 <image>
+                                    <Image url="@../../../img/29302.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="classeBtn" layoutX="7.0" layoutY="333.0" mnemonicParsing="false" onAction="#loadClasse" prefHeight="31.0" prefWidth="226.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="Add classe">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="evaluationBtn" layoutX="10.0" layoutY="387.0" mnemonicParsing="false" onAction="#loadComposer" prefHeight="35.0" prefWidth="225.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="Add evaluation">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="45.0" layoutY="335.0">
+                                 <image>
+                                    <Image url="@../../../img/Science-Classroom-icon.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="27.0" layoutX="42.0" layoutY="394.0">
+                                 <image>
+                                    <Image url="@../../../img/73926.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="resultatBtn" layoutX="-29.0" layoutY="445.0" mnemonicParsing="false" onAction="#loadResultat" prefHeight="35.0" prefWidth="265.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="resultat">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="statBtn" layoutX="-1.0" layoutY="493.0" mnemonicParsing="false" onAction="#loadStatistique" prefHeight="35.0" prefWidth="236.0" styleClass="nav-btn" stylesheets="@../../../css/style_2.css" text="statistiques">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="42.0" layoutY="446.0">
+                                 <image>
+                                    <Image url="@../../../img/Resul.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="47.0" layoutY="498.0">
+                                 <image>
+                                    <Image url="@../../../img/stat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane fx:id="Switch_form" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="95.0" layoutY="101.0" prefHeight="565.0" prefWidth="873.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="13.0" layoutY="10.0" prefHeight="541.0" prefWidth="848.0" stylesheets="@../../../css/style_2.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane prefHeight="175.0" prefWidth="847.0" stylesheets="@../../../css/style_2.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <AnchorPane layoutX="14.0" layoutY="9.0" prefHeight="157.0" prefWidth="263.0" styleClass="nav-form" stylesheets="@../../../css/style_2.css">
+                                             <children>
+                                                <ImageView fitHeight="152.0" fitWidth="113.0" layoutX="13.0" layoutY="2.0">
+                                                   <image>
+                                                      <Image url="@../../../img/Business-Conference-Call-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label layoutX="127.0" layoutY="115.0" text="Total des etudiants">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="T_etudiantLabel" alignment="CENTER_RIGHT" layoutX="118.0" layoutY="38.0" prefHeight="32.0" prefWidth="134.0" text="0">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="25.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="289.0" layoutY="9.0" prefHeight="157.0" prefWidth="263.0" styleClass="nav-form" stylesheets="@../../../css/style_2.css">
+                                             <children>
+                                                <Label layoutX="134.0" layoutY="113.0" text="Total des femmes">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="T_femmeLabel" alignment="CENTER_RIGHT" layoutX="129.0" layoutY="43.0" prefHeight="25.0" prefWidth="128.0" text="0">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="141.0" fitWidth="122.0" layoutX="4.0" layoutY="7.0">
+                                                   <image>
+                                                      <Image url="@../../../img/femme.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="571.0" layoutY="9.0" prefHeight="157.0" prefWidth="263.0" styleClass="nav-form" stylesheets="@../../../css/style_2.css">
+                                             <children>
+                                                <Label layoutX="132.0" layoutY="114.0" text="Total des hommes">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="T_hommeLabel" alignment="CENTER_RIGHT" layoutX="136.0" layoutY="43.0" prefHeight="29.0" prefWidth="120.0" text="0">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="134.0" fitWidth="113.0" layoutX="4.0" layoutY="9.0">
+                                                   <image>
+                                                      <Image url="@../../../img/homme.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane fx:id="chartContainer" layoutX="8.0" layoutY="181.0" prefHeight="350.0" prefWidth="825.0" stylesheets="@../../../css/style_2.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
